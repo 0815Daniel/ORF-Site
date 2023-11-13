@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900');
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    font-size: 1rem;
+    color: white;
+    background-color: #16416B;	
+}
+
+nav {
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #16416B;
+    max-width: 1000px;
+    color: white;
+}
+
+nav button {
+    display: none;
+	padding: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+	background-color: steelblue;
+}
+
+@media screen and (min-width: 769px) {
+    nav button:nth-child(-n+3) {
+        display: inline-block;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    nav button:nth-child(4) {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav button:nth-last-child(-n+3) {
+        width: 100%;
+		text-align: left;
+    }
+}
+main{
+	margin: 4rem 0rem 2rem 0rem;
+}
+
+main section {
+    background-color: steelblue;
+	display: flex;
+	padding: 1rem 0rem 0rem 0.5rem;
+	align-items: center;
+}
+
+main section h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+	color: white;
+}
+main address{
+	padding: 1rem 1rem 2rem 1rem;
+	background-color: steelblue;
+	color: white;
+	margin-bottom: 2rem;
+}
+
+main h1{
+	text-align: center;
+}
+table{
+	width: 11rem;
+	width: 100%;
+	border-collapse: collapse;
+}
+td{
+	text-align: center;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+tr:nth-child(even){
+	background-color: rgba(30, 144, 255, 15%);
+}
+abbr{
+	cursor: help;
+}
+.td-new{
+	background: url('https://tubestatic.orf.at/mojo/1_3/storyserver/tube/oe3/images/charts_status_new.png') no-repeat scroll center center;
+}
+.td-up{
+	background: url(https://tubestatic.orf.at/mojo/1_3/storyserver/tube/oe3/images/charts_status_up.png) no-repeat scroll center center;
+}
+.td-down{
+	background: url(https://tubestatic.orf.at/mojo/1_3/storyserver/tube/oe3/images/charts_status_down.png) no-repeat scroll center center;
+}
+.td-same{
+	background: url(https://tubestatic.orf.at/mojo/1_3/storyserver/tube/oe3/images/charts_status_equal.png) no-repeat scroll center center;
+}
+footer {
+    font-size: 1rem;
+    color: white;
+    background-color: #16416B;
+}
+footer button{
+	padding: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+}

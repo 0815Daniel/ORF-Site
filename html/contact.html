@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Daniel ORF - Contact</title>
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick="window.location.href='index.html';">News</button>
+            <button onclick="window.location.href='top40.html';">Ö3 Top 40</button>
+            <button onclick="window.location.href='contact.html';">Contact</button>
+        
+            <button>&#9776;</button>
+		
+            <button onclick="window.location.href='index.html';">News</button>
+            <button onclick="window.location.href='top40.html';">Ö3 Top 40</button>
+            <button onclick="window.location.href='contact.html';">Contact</button>
+        </nav>
+    </header>
+    <main>
+		<section>
+            <h1>NEWS</h1>
+            <a href="http://www.orf.at"><img src="../img/logo.svg" alt="Logo"></a>
+        </section>
+			<address>
+				<i>ORF-Zentrum</i><br>
+				<i>Würzburggasse 30</i><br>
+				<i>1136 Wien</i>
+			</address>
+		
+		<form action="contactform.html" method="get">
+			<p>Ihr Name:</p><br>
+			<input type="text" name="name" required><br>
+			<p>Ihre Email:</p><br>
+			<input type="email" name="email" required><br>
+			<p>Ihre Nachricht:</p><br>
+			<textarea name="txt" required></textarea><br>
+			<input type="checkbox" name="check" required>Ich willige ein, dass meine Daten an Geheimdienstorganisationen verkauft werden, die mich damit dann abhören können.<br><br>
+			<input type="submit" name="submit" value="Abschicken">
+		</form>
+    </main>
+    <script src="../javascript/js.js"></script>
+</body>
+</html>
